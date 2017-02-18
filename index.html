@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<link rel="icon" href="resources/images/diente.ico" />
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+<!–--Con esto garantizamos que se vea bien en dispositivos móviles--–>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clinica Dental Integral</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bootstrap/css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.css" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/lib/w3.css">
+</head>
+<br>
+<br>
+<br>
+ <center>
+     <img src ="resources/images/logo.jpeg" border=""width="20%" height="20%" align=center>
+<br>
+<br>
+	 <p class="p-personal-parrafo_centrado">
+ Toda sonrisa es producto de otra sonrisa
+ </p>
+ </center>
+ <body>
+ <!------------------Barra de menu------------------->
+ <div class="mainWrap">
+    <nav>
+   <ul class="menu">
+   <li><a href="index.html">
+   <i class="icon-home"></i>Inicio</a>
+   </li>
+
+  <li><a  href="tratamientos.html">
+  <i class="icon-user">
+  </i>Tratamientos</a></li>
+
+  <li><a  href="clinica.html">
+  <i class="icon-camera">
+  </i>Clinica</a>
+  </li>
+
+  <li><a  href="equipo.html">
+  <i class="icon-bullhorn">
+  </i>Equipo</a></li>
+
+  <li><a  href="contacto.html">
+  <i class="icon-envelope-alt">
+  </i>Contacto</a></li>
+  </ul>
+  </nav>
+ </div>
+
+ <br>
+ <br>
+<!-------------- slider --------------->
+<center>
+<div class="w3-content w3-section" style="max-width:960px">
+  <img class="mySlides" src="resources/images/slider/dos.jpg" style="width:100%">
+  <img class="mySlides" src="resources/images/slider/uno.jpg" style="width:100%">
+  <img class="mySlides" src="resources/images/slider/tres.jpg" style="width:100%">
+  <img class="mySlides" src="resources/images/slider/cuatro.jpg" style="width:100%">
+  <img class="mySlides" src="resources/images/slider/cinco.jpg" style="width:100%">
+
+</div>
+<center>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+  <div class="col-md-3 col-lg-3 col-sm-3"></div>
+              <div class="col-md-6 col-lg-6 col-sm-6">
+                 <div class="footer-spining">
+                   Transversal de la concha #2 "A" Col. El carrizo, Gto, Guanajuato. Mexico<br />
+                    Tel: 473 73 2 11 16<br />
+                    Email: pendiente
+                 </div>
+              </div>
+              <div class="col-md-3 col-lg-3 col-sm-3">
+                 <div class="footer-copyright">
+                    <br />
+                    <a href="aviso_legal.html">Aviso Legal</a><br />
+                    Template built for <a href="http://getbootstrap.com">Bootstrap</a>
+                 </div>
+             </div>
+          </div>
+      </div>
+
+
+</body>
+</html>

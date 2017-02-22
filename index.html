@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<link rel="icon" href="resources/images/diente.ico" />
+<link rel="icon" href="resources/images/icono.ico" />
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-<!–--Con esto garantizamos que se vea bien en dispositivos móviles--–>
+    <meta charset="utf-8">
+    <!–--Con esto garantizamos que se vea bien en dispositivos móviles--–>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Clinica Dental Integral</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +11,24 @@
     <link rel="stylesheet" href="bootstrap/css/font-awesome.css" >
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/lib/w3.css">
-</head>
-<br>
-<br>
-<br>
- <center>
-     <img src ="resources/images/logo.jpeg" border=""width="20%" height="20%" align=center>
-<br>
-<br>
-	 <p class="p-personal-parrafo_centrado">
- Toda sonrisa es producto de otra sonrisa
- </p>
- </center>
- <body>
- <!------------------Barra de menu------------------->
+  </head>
+  <body>
+      <div class="container">
+
+      <!-- ---------------------------------Encabezado------------------------------------ -->
+
+      <div class="row">
+          <div class="col-md-12 col-lg-12 col-sm-12">
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+             <center>
+                 <img src ="resources/images/logo.jpeg" border=""width="20%" height="20%" align=center>
+             </center>
+          </div>
+          </div>
+      </div>
+
+      <!-- -----------------------------------Menú---------------------------------------- -->
+     <!------------------Barra de menu------------------->
  <div class="mainWrap">
     <nav>
    <ul class="menu">
@@ -51,10 +55,21 @@
   </ul>
   </nav>
  </div>
+  <center>
+      <h1> Únete a la familia Spin World </h1>
+      <br>
+      <p class="p-personal-parrafo_centrado_negro">
+          Es tiempo de ponerte en forma, por salud y también por vanidad.
+          <br />
+          Continuamos con el precio de $25.00 por clase, asiste y comienza tu entrenamiento.
+      </p>
+ </center>
+ <br>
 
- <br>
- <br>
-<!-------------- slider --------------->
+      <!-- --------------------------------------Contenido ---------------------------------- -->
+      <div class="row">
+           <div class="col-md-12 col-lg-12 col-sm-12">   <!-- md=mediana(4:12) lg=grande(4:12) sm=small(6:12)  -->
+           <!-------------- slider --------------->
 <center>
 <div class="w3-content w3-section" style="max-width:960px">
   <img class="mySlides" src="resources/images/slider/dos.jpg" style="width:100%">
@@ -81,18 +96,23 @@ function carousel() {
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
-<br>
-<br>
-<br>
-<br>
+          </div>
+      </div><!-- Contenido -->
 
-
-
-
-  <div class="col-md-3 col-lg-3 col-sm-3"></div>
+      <!-- --------------------Footer---------------------- -->
+      <div class="row">
+          <br /><br />
+          <div class="divider-personal"></div>
+          <div class="col-md-12 col-lg-12 col-sm-12">
+              <div class="row">
+                  <div class="footer-spining">
+                        <img src ="resources/images/logo-footer.png">
+                  </div>
+              </div>
+              <div class="col-md-3 col-lg-3 col-sm-3"></div>
               <div class="col-md-6 col-lg-6 col-sm-6">
                  <div class="footer-spining">
-                   Transversal de la concha #2 "A" Col. El carrizo, Gto, Guanajuato. Mexico<br />
+                    Transversal de la concha #2 "A" Col. El carrizo, Gto, Guanajuato. Mexico<br />
                     Tel: 473 73 2 11 16<br />
                     Email: pendiente
                  </div>
@@ -106,7 +126,7 @@ function carousel() {
              </div>
           </div>
       </div>
-
-
-</body>
+    </div>
+  </body>
 </html>
+

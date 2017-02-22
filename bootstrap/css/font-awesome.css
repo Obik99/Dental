@@ -1333,27 +1333,5 @@ ul.icons-ul > li .icon-li {
  .col-lg-offset-0{margin-left:0}}table{background-color:transparent}caption{padding-top:8px;padding-bottom:8px;color:#777;text-align:left}th{text-align:left}
 
 
-  .footer-spining{
-     text-align:center;
-     color:#777;
-     font-size: 12px;
-}
-
-.footer-spining img{
-    text-align: center;
-    width: 15%;
-    height: 15%;
-}
-.footer-copyright{
-     text-align:right;
-     color:#777;
-     font-size: 10px;
-     margin-bottom:auto;
-}
-
-/*------Párrafos----------*/
- .p-personal-parrafo_justificado{text-align:justify; color:#228B22; }
- /*Justificados*/
- .p-personal-parrafo_centrado{text-align:center; font-size:30px;font-weight:bold; color:#228B22;}
 
 

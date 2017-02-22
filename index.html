@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<link rel="icon" href="resources/images/icono.ico" />
+<link rel="icon" href="resources/images/diente.ico" />
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-    <!–--Con esto garantizamos que se vea bien en dispositivos móviles--–>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Clinica Dental Integral</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="bootstrap/css/style.css" type="text/css" media="screen">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!–Con esto garantizamos que se vea bien en dispositivos móviles–>
+    <title>Clínica Dental Integral</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/estilos-personales.css" rel="stylesheet" media="screen">
+      	<link rel="stylesheet" href="bootstrap/css/style.css" type="text/css" media="screen">
     <link rel="stylesheet" href="bootstrap/css/font-awesome.css" >
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/lib/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body>
       <div class="container">
 
-      <!-- ---------------------------------Encabezado------------------------------------ -->
+    <!-- ---------------------------------Encabezado------------------------------------ -->
 
       <div class="row">
           <div class="col-md-12 col-lg-12 col-sm-12">
@@ -26,35 +27,31 @@
           </div>
           </div>
       </div>
-
       <!-- -----------------------------------Menú---------------------------------------- -->
-     <!------------------Barra de menu------------------->
- <div class="mainWrap">
-    <nav>
-   <ul class="menu">
-   <li><a href="index.html">
-   <i class="icon-home"></i>Inicio</a>
-   </li>
+      <nav class="navbar navbar-default" role="navigation">
+    <!-- El logotipo y el icono que despliega el menú se agrupan
+         para mostrarlos mejor en los dispositivos móviles -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle-personal" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Desplegar navegación</span>
+                <span class="icon-bar-personal"></span>
+                <span class="icon-bar-personal"></span>
+                <span class="icon-bar-personal"></span>
+           </button>
+            <a class="navbar-brand" href="index.html"><i class="icon-home"></i>Inicio</a>
+         </div>
 
-  <li><a  href="tratamientos.html">
-  <i class="icon-user">
-  </i>Tratamientos</a></li>
-
-  <li><a  href="clinica.html">
-  <i class="icon-camera">
-  </i>Clinica</a>
-  </li>
-
-  <li><a  href="equipo.html">
-  <i class="icon-bullhorn">
-  </i>Equipo</a></li>
-
-  <li><a  href="contacto.html">
-  <i class="icon-envelope-alt">
-  </i>Contacto</a></li>
-  </ul>
+    <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+         otro elemento que se pueda ocultar al minimizar la barra -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="tratamientos.html"><i class="icon-user"></i>Tratamientos</a></li>
+        <li><a href="clinica.html">Clínica</a></li>
+        <li><a href="equipo.html"><i class="icon-bullhorn"></i>Equipo</a></li>
+		<li><a href="contacto.html"><i class="icon-envelope-alt">  </i>Contacto</a></li>
+      </ul>
+    </div>
   </nav>
- </div>
   <center>
       <h1> Únete a la familia Spin World </h1>
       <br>
@@ -69,34 +66,78 @@
       <!-- --------------------------------------Contenido ---------------------------------- -->
       <div class="row">
            <div class="col-md-12 col-lg-12 col-sm-12">   <!-- md=mediana(4:12) lg=grande(4:12) sm=small(6:12)  -->
-           <!-------------- slider --------------->
-<center>
-<div class="w3-content w3-section" style="max-width:960px">
-  <img class="mySlides" src="resources/images/slider/dos.jpg" style="width:100%">
-  <img class="mySlides" src="resources/images/slider/uno.jpg" style="width:100%">
-  <img class="mySlides" src="resources/images/slider/tres.jpg" style="width:100%">
-  <img class="mySlides" src="resources/images/slider/cuatro.jpg" style="width:100%">
-  <img class="mySlides" src="resources/images/slider/cinco.jpg" style="width:100%">
+             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="1500">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                </ol>
 
-</div>
-<center>
-<script>
-var myIndex = 0;
-carousel();
+                <!-- Wrapper for slides -->
+				<center>
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="resources/images/slider/uno.jpg" alt="...">
+                    <div class="carousel-caption">
+                      <!--  <h3>Caption Text</h3> -->
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="resources/images/slider/dos.jpg" alt="...">
+                    <div class="carousel-caption">
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
-          </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="resources/images/slider/tres.jpg" alt="...">
+                    <div class="carousel-caption">
+
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="resources/images/slider/cuatro.jpg" alt="...">
+                    <div class="carousel-caption">
+
+                    </div>
+                  </div>
+				  <div class="item">
+                    <img src="resources/images/slider/cinco.jpg" alt="...">
+                    <div class="carousel-caption">
+
+                    </div>
+                  </div>
+				  <div class="item">
+                    <img src="resources/images/slider/dies.jpg" alt="...">
+                    <div class="carousel-caption">
+
+                    </div>
+                  </div>
+				  <div class="item">
+                    <img src="resources/images/slider/ocho.jpg" alt="...">
+                    <div class="carousel-caption">
+
+                    </div>
+                  </div>
+				  <div class="item">
+                    <img src="resources/images/slider/nueve.jpg" alt="...">
+                    <div class="carousel-caption">
+
+                    </div>
+                  </div>
+                </div>
+				</center>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div> <!-- Carousel -->
+          </div> <!-- Contenido derecho-->
       </div><!-- Contenido -->
 
       <!-- --------------------Footer---------------------- -->
@@ -112,9 +153,9 @@ function carousel() {
               <div class="col-md-3 col-lg-3 col-sm-3"></div>
               <div class="col-md-6 col-lg-6 col-sm-6">
                  <div class="footer-spining">
-                    Transversal de la concha #2 "A" Col. El carrizo, Gto, Guanajuato. Mexico<br />
-                    Tel: 473 73 2 11 16<br />
-                    Email: pendiente
+                   San Clemente #27 altos, Guanajuato, Guanajuato. Mexico<br />
+                    Tel: 473 1087241<br />
+                    Email: spinworldgto@hotmail.com
                  </div>
               </div>
               <div class="col-md-3 col-lg-3 col-sm-3">
@@ -126,7 +167,6 @@ function carousel() {
              </div>
           </div>
       </div>
-    </div>
+
   </body>
 </html>
-

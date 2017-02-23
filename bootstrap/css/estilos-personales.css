@@ -8,7 +8,7 @@
 
 /*------------------------------------------Menú completo y personalizado-----------------------------*/
 
-.navbar-default{background-color:#008B00;border-color:#008B00}
+.navbar-default{background-color:#59A044;border-color:#59A044}
 .navbar-default .navbar-brand{color:#FFF}
 /*.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:hover{color:#FFF;background-color:transparent}*/
 .navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:hover{color:#FFF;background-color:transparent;font-size: 25px;}
@@ -16,12 +16,12 @@
 .navbar-default .navbar-text{color:#FFF}
 .navbar-default .navbar-nav>li>a{color:#FFF}
 .navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover{color:#FFF;background-color:transparent;font-size: 25px;}
-.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover{color:#FFF;background-color:#8BC43F}
+.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover{color:#59A044;background-color:#FFF}
 .navbar-default .navbar-nav>.disabled>a,.navbar-default .navbar-nav>.disabled>a:focus,.navbar-default .navbar-nav>.disabled>a:hover{color:#ccc;background-color:transparent}
 
  /*Menú de cuando es celular*/
 .navbar-default .navbar-toggle-personal{border-color:#FFF}
-.navbar-default .navbar-toggle-personal:focus,.navbar-default .navbar-toggle-personal:hover{background-color:#55DEF1}
+.navbar-default .navbar-toggle-personal:focus,.navbar-default .navbar-toggle-personal:hover{background-color:#09D261;}
 .navbar-default .navbar-toggle-personal .icon-bar-personal{background-color:#FFF}
 
 .navbar-default .navbar-collapse,.navbar-default .navbar-form{border-color:#e7e7e7}

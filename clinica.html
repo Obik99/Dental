@@ -1,67 +1,121 @@
 <!DOCTYPE html>
-<link rel="icon" href="resources/images/diente.ico" />
+<link rel="icon" href="resources/images/icono.ico" />
 <html lang="es">
   <head>
     <meta charset="utf-8">
-<!–--Con esto garantizamos que se vea bien en dispositivos móviles--–>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Clinica Dental Integral</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="bootstrap/css/style.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="bootstrap/css/font-awesome.css" >
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/lib/w3.css">
-</head>
-<br>
-<br>
-<br>
- <center>
-     <img src ="resources/images/logo2.jpg" border=""width="35%" height="20%" align=center>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!–Con esto garantizamos que se vea bien en dispositivos móviles–>
+    <title>SPIN WORLD</title>
 
- </center>
- <body>
- <!------------------Barra de menu------------------->
-  <div class="mainWrap">
-    <nav>
-   <ul class="menu">
-   <li><a href="index.html">
-   <i class="icon-home"></i>Inicio</a>
-   </li>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/estilos-personales.css" rel="stylesheet" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <div class="container">
 
-  <li><a  href="tratamientos.html">
-  <i class="icon-user">
-  </i>Tratamientos</a></li>
+      <!-- ---------------------------------Encabezado------------------------------------ -->
 
-  <li><a  href="clinica.html">
-  <i class="icon-camera">
-  </i>Clinica</a>
-  </li>
+      <div class="row">
+          <div class="col-md-12 col-lg-12 col-sm-12">
+             <div class="collapse navbar-collapse navbar-ex1-collapse">
+                 <span style="line-height:1.3em;">
+                     <span style="font-family:stencil-w01-bold,fantasy;">
+                          <center>
+<img src ="resources/images/logo2.jpg" border=""width="57%" height="17%" align=center>
+</center>
+                     </span>
+                 </span>
+             </div>
+          </div>
+      </div>
 
-  <li><a  href="equipo.html">
-  <i class="icon-bullhorn">
-  </i>Equipo</a></li>
+      <!-- -----------------------------------Menú---------------------------------------- -->
+      <nav class="navbar navbar-default" role="navigation">
+    <!-- El logotipo y el icono que despliega el menú se agrupan
+         para mostrarlos mejor en los dispositivos móviles -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle-personal" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Desplegar navegación</span>
+                <span class="icon-bar-personal"></span>
+                <span class="icon-bar-personal"></span>
+                <span class="icon-bar-personal"></span>
+           </button>
+            <a class="navbar-brand" href="index.html">Inicio</a>
+         </div>
 
-  <li><a  href="contacto.html">
-  <i class="icon-envelope-alt">
-  </i>Contacto</a></li>
-  </ul>
-  </nav>
- </div>
+    <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+         otro elemento que se pueda ocultar al minimizar la barra -->
+       <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="servicios.html">Quiénes somos</a></li>
+            <li><a href="clases.html">Clases y horarios</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+		    <li><a href="contacto.html">Contacto y reservar clase</a></li>
+          </ul>
+       </div>
+      </nav>
 
+    <div class="row">
+    <div class="col-md-12 col-lg-12 col-sm-12">
+          <center>
 
-<br>
-<br>
-<br>
+            <!-- -----------------SPINING---------------- -->
+            <article class="articulo">
+                <h1> SPINNING </h1>
+                   <div class="row">
+                   <div class="col-md-6 col-lg-6 col-sm-12">
+                       <img class="img-responsive" src="resources/images/spinin.jpg">
+                   </div>
+                   <div class="col-md-6 col-lg-6 col-sm-12">
+                        <p>
+                        <strong>Horario de clases</strong><br />
+                        Lunes a Jueves: 8:00 a.m., 6:00 y 7:00 p.m.<br />
+						Viernes: 8:00 a.m. y 6:00 p.m. <br />
+                        Sábado: 9:00 a.m. <br />
+                        El ejercicio de cardio por excelencia, con el cual lograrás tonificar  tus piernas, muslos y pompis, además de dar a tu corazón la regulación del ritmo cardiaco adecuado. Al hacer ejercicio, notarás el cambio en tu resistencia y respiración, además de los cambios al transformarse en un cuerpo más saludable.
+                        </p>
+                   </div>
+                </div>
+            </article>
 
+            <!-- -----------------TAEBO-------------------------------------- -->
+            <article class="articulo">
+                <h1> Pilates, Yoga y Estiramiento </h1>
+                   <div class="row">
+                   <div class="col-md-6 col-lg-6 col-sm-12">
+                       <img class="img-responsive" src="resources/images/taebo.jpg">
+                   </div>
+                   <div class="col-md-6 col-lg-6 col-sm-12">
+                        <p>
+                        <strong>Horario de clases</strong><br />
+                        Sábados: 8:00 a.m. <br />
+                        Además del spinnig fusionamos tres disciplinas para que te ejercites de una manera innovadora, la concentración de pilates, la tanquilidad y equilibrio del yoga con el estiramiento adecuado de tu cuerpo, te ejercitan adecuadamente buscando la salud de tu cuerpo y mente.
+                        </p>
+                   </div>
+                </div>
+            </article>
 
+        </center>
+    </div>
+    </div>
 
-
-  <div class="col-md-3 col-lg-3 col-sm-3"></div>
+      <!-- --------------------Footer---------------------- -->
+      <div class="row">
+          <br /><br />
+          <div class="divider-personal"></div>
+          <div class="col-md-12 col-lg-12 col-sm-12">
+              <div class="row">
+                  <div class="footer-spining">
+                        <img src ="resources/images/logo-footer.png">
+                  </div>
+              </div>
+              <div class="col-md-3 col-lg-3 col-sm-3"></div>
               <div class="col-md-6 col-lg-6 col-sm-6">
                  <div class="footer-spining">
-                   Transversal de la concha #2 "A" Col. El carrizo, Gto, Guanajuato. Mexico<br />
-                    Tel: 4737321116<br />
-                    Email: pendiente
+                   San Clemente #27 altos, Guanajuato, Guanajuato. Mexico<br />
+                    Tel: 473 1087241<br />
+                    Email: spinworldgto@hotmail.com
                  </div>
               </div>
               <div class="col-md-3 col-lg-3 col-sm-3">
@@ -72,8 +126,6 @@
                  </div>
              </div>
           </div>
-      </div>
-
-
-</body>
+      </div><!-- ROW FOOTER -->
+  </body>
 </html>
